@@ -18,6 +18,15 @@ a:visited {
   color: #000;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
+#header {
+  position: relative;
+  margin-bottom: 60px;
+}
+
 #logo {
   text-align: center;
   padding-bottom: 20px;
@@ -35,7 +44,7 @@ nav #main-nav-bar {
   padding: 0;
   text-align: center;
 }
-nav #main-nav-bar li{
+nav #main-nav-bar li {
   position:relative;
   display:inline;
 }
@@ -48,7 +57,7 @@ nav #main-nav-bar a {
   display: inline-block;
   padding: 10px;
 }
-nav #main-nav-bar ul{
+nav #main-nav-bar ul {
   position:absolute;
   /*top:100%; Uncommenting this makes the dropdowns work in IE7 but looks a little worse in all other browsers. Your call. */
   left:-9999px;
@@ -56,25 +65,91 @@ nav #main-nav-bar ul{
   padding:0;
   text-align:left;
 }
-nav #main-nav-bar ul li{
+nav #main-nav-bar ul li {
   display:block;
 }
-nav #main-nav-bar li:hover ul{
+nav #main-nav-bar li:hover ul {
   left:0;
 }
-nav #main-nav-bar li:hover a{
-  text-decoration:underline;
-}
-nav #main-nav-bar li:hover ul a{
+nav #main-nav-bar li:hover ul a {
   text-decoration:none;
   background:none;
 }
-nav #main-nav-bar li:hover ul a:hover{
-  text-decoration:underline;
-  background:#f1f1f1;
-}
-nav #main-nav-bar ul a{
+nav #main-nav-bar ul a {
   white-space:nowrap;
   display:block;
   border-bottom:1px solid #ccc;
+}
+footer#footer {
+  border: none;
+}
+nav #footer-nav-bar {
+  text-transform: uppercase;
+  border: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+nav #footer-nav-bar li {
+  position:relative;
+  display:inline;
+}
+nav #footer-nav-bar li a {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+nav #footer-nav-bar a {
+  display: inline-block;
+  padding: 10px;
+}
+nav #footer-nav-bar ul {
+  position:absolute;
+  /*top:100%; Uncommenting this makes the dropdowns work in IE7 but looks a little worse in all other browsers. Your call. */
+  left:-9999px;
+  margin:0;
+  padding:0;
+  text-align:left;
+}
+nav #footer-nav-bar ul li {
+  display:block;
+}
+nav #footer-nav-bar li:hover ul {
+  left:0;
+}
+nav #footer-nav-bar li:hover a {
+  text-decoration:underline;
+}
+nav #footer-nav-bar li:hover ul a {
+  text-decoration:none;
+  background:none;
+}
+nav #footer-nav-bar li:hover ul a:hover {
+  text-decoration:underline;
+  background:#f1f1f1;
+}
+nav #footer-nav-bar ul a {
+  white-space:nowrap;
+  display:block;
+  border-bottom:1px solid #ccc;
+}
+h1.taxon-title {
+  color: #8f8f8f;
+  font-size: 23px;
+  letter-spacing: 4px;
+  text-align: center;
+  text-transform: uppercase;
+}
+ul#products li {
+  font-weight: normal;
+  margin-bottom: 70px;
+  margin-top: 70px;
+}
+ul#products li .product-image {
+  border: none;
+  padding: 0;
+}
+ul#products li a.info {
+  border-bottom: none;
 }

@@ -13,15 +13,20 @@ body {
   background-color: white;
   -webkit-font-smoothing: antialiased;
 }
-a,
+a:link,
 a:visited {
   color: #000;
 }
 
 a:hover {
+  color: #888;
   text-decoration: none;
 }
 
+
+/*
+* Header
+* * * * * * * * * * * * * * * * * * * */
 #header {
   position: relative;
   margin-bottom: 60px;
@@ -32,10 +37,18 @@ a:hover {
   padding-bottom: 20px;
 }
 
+
+/*
+* Account Navigation
+* * * * * * * * * * * * * * * * * * * */
 #top-nav-bar {
   position: absolute;
 }
 
+
+/*
+* Main Navigation
+* * * * * * * * * * * * * * * * * * * */
 nav #main-nav-bar {
   text-transform: uppercase;
   border: none;
@@ -52,6 +65,12 @@ nav #main-nav-bar li a {
   font-size: 11px;
   font-weight: 600;
   letter-spacing: 1px;
+  padding: 0px 10px;
+}
+/* nav #main-nav-bar li:first-child is defined by spree core.
+   this is here to match it, */
+nav #main-nav-bar li:nth-child(9) a {
+  padding-right: 0px;
 }
 nav #main-nav-bar a {
   display: inline-block;
@@ -80,9 +99,19 @@ nav #main-nav-bar ul a {
   display:block;
   border-bottom:1px solid #ccc;
 }
+
+
+/*
+* Footer
+* * * * * * * * * * * * * * * * * * * */
 footer#footer {
   border: none;
 }
+
+
+/*
+* Footer Navigation
+* * * * * * * * * * * * * * * * * * * */
 nav #footer-nav-bar {
   text-transform: uppercase;
   border: none;
@@ -96,9 +125,15 @@ nav #footer-nav-bar li {
   display:inline;
 }
 nav #footer-nav-bar li a {
-  font-size: 11px;
+  font-size: 15px;
   font-weight: 600;
-  letter-spacing: 1px;
+  letter-spacing: 3px;
+}
+nav #footer-nav-bar li:first-child a {
+  padding-left: 0;
+}
+nav #footer-nav-bar li:nth-child(4) a {
+  padding-right: 0;
 }
 nav #footer-nav-bar a {
   display: inline-block;
@@ -119,21 +154,143 @@ nav #footer-nav-bar li:hover ul {
   left:0;
 }
 nav #footer-nav-bar li:hover a {
-  text-decoration:underline;
+  
 }
 nav #footer-nav-bar li:hover ul a {
-  text-decoration:none;
-  background:none;
+
 }
 nav #footer-nav-bar li:hover ul a:hover {
-  text-decoration:underline;
-  background:#f1f1f1;
+
 }
 nav #footer-nav-bar ul a {
-  white-space:nowrap;
-  display:block;
-  border-bottom:1px solid #ccc;
+  white-space: nowrap;
+  display: block;
 }
+
+
+/*
+* Footer Navigation
+* * * * * * * * * * * * * * * * * * * */
+nav #social-nav-bar {
+  text-transform: uppercase;
+  border: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+nav #social-nav-bar li {
+  position:relative;
+  display:inline;
+}
+nav #social-nav-bar li a {
+  font-size: 12px;
+  font-weight: 400;
+}
+nav #social-nav-bar li:first-child a {
+  padding-left: 0;
+}
+nav #social-nav-bar li:nth-child(5) a {
+  padding-right: 0;
+}
+nav #social-nav-bar a {
+  display: inline-block;
+  padding: 10px;
+}
+nav #social-nav-bar ul {
+  position:absolute;
+  /*top:100%; Uncommenting this makes the dropdowns work in IE7 but looks a little worse in all other browsers. Your call. */
+  left:-9999px;
+  margin:0;
+  padding:0;
+  text-align:left;
+}
+nav #social-nav-bar ul li {
+  display:block;
+}
+nav #social-nav-bar li:hover ul {
+  left:0;
+}
+nav #social-nav-bar li:hover a {
+  
+}
+nav #social-nav-bar li:hover ul a {
+
+}
+nav #social-nav-bar li:hover ul a:hover {
+
+}
+nav #social-nav-bar ul a {
+  white-space: nowrap;
+  display: block;
+}
+
+
+/*
+* Legal Navigation
+* * * * * * * * * * * * * * * * * * * */
+nav #legal-nav-bar {
+  text-transform: uppercase;
+  border: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+nav #legal-nav-bar li {
+  position:relative;
+  display:inline;
+}
+nav #legal-nav-bar li a {
+  color: #888;
+  font-size: 11px;
+  font-weight: 400;
+}
+nav #legal-nav-bar li a:hover {
+  color: #000;
+}
+nav #legal-nav-bar li:first-child a {
+  padding-left: 0;
+}
+nav #legal-nav-bar li:nth-child(3) a {
+  padding-right: 0;
+}
+nav #legal-nav-bar a {
+  display: inline-block;
+  padding: 10px;
+}
+nav #legal-nav-bar ul {
+  position:absolute;
+  /*top:100%; Uncommenting this makes the dropdowns work in IE7 but looks a little worse in all other browsers. Your call. */
+  left:-9999px;
+  margin:0;
+  padding:0;
+  text-align:left;
+}
+nav #legal-nav-bar ul li {
+  display:block;
+}
+nav #legal-nav-bar li:hover ul {
+  left:0;
+}
+nav #legal-nav-bar li:hover a {
+  
+}
+nav #legal-nav-bar li:hover ul a {
+
+}
+nav #legal-nav-bar li:hover ul a:hover {
+
+}
+nav #legal-nav-bar ul a {
+  white-space: nowrap;
+  display: block;
+}
+
+
+/*
+* Taxons
+* * * * * * * * * * * * * * * * * * * */
 h1.taxon-title {
   color: #8f8f8f;
   font-size: 23px;
@@ -141,6 +298,11 @@ h1.taxon-title {
   text-align: center;
   text-transform: uppercase;
 }
+
+
+/*
+* Products
+* * * * * * * * * * * * * * * * * * * */
 ul#products li {
   font-weight: normal;
   margin-bottom: 70px;
@@ -153,3 +315,7 @@ ul#products li .product-image {
 ul#products li a.info {
   border-bottom: none;
 }
+
+
+
+

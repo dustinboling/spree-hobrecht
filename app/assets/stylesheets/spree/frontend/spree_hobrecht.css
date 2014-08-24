@@ -18,10 +18,12 @@ a:link,
 a:visited {
   color: #000;
 }
-
 a:hover {
   color: #888;
   text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6 {
+  text-transform: uppercase;
 }
 
 
@@ -44,6 +46,12 @@ a:hover {
 * * * * * * * * * * * * * * * * * * * */
 #top-nav-bar {
   position: absolute;
+  top: 0;
+  right: 0;
+}
+nav#top-nav-bar ul li a {
+  font-size: 11px;
+  color: #888;
 }
 
 
@@ -290,15 +298,21 @@ nav #legal-nav-bar ul a {
 
 
 /*
-* Taxons
+* Page Titles
 * * * * * * * * * * * * * * * * * * * */
-h1.taxon-title {
+h1.taxon-title,
+h1[data-hook="checkout_title"] {
   color: #8f8f8f;
   font-size: 23px;
   letter-spacing: 4px;
   text-align: center;
   text-transform: uppercase;
 }
+
+
+/*
+* Taxons
+* * * * * * * * * * * * * * * * * * * */
 
 
 /*
@@ -367,6 +381,24 @@ div[data-hook="inside_cart_form"] #subtotal span.order-total {
 .cart-subtotal td h5,
 .cart-total td h5 {
   color: #000;
+}
+.progress-steps li.current-first,
+.progress-steps li.current {
+  background-color: #000;
+  color: #FFF;
+}
+#billing legend,
+#shipping legend,
+#shipping_method legend,
+#payment legend,
+#order_details legend,
+#order_summary legend {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  color: #000;
+  padding: 5px;
+  margin-left: 15px;
 }
 
 

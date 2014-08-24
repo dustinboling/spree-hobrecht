@@ -1,0 +1,8 @@
+<!-- insert_bottom 'ul#nav-bar' -->
+<li id="link-to-cart" data-hook>
+  <noscript>
+    <%= link_to Spree.t(:cart), '/cart' %>
+  </noscript>
+  &nbsp;
+</li>
+<script>Spree.fetch_cart()</script>

@@ -321,6 +321,10 @@ ul#products li a.info {
 /*
 * Product
 * * * * * * * * * * * * * * * * * * * */
+#product-images #main-image {
+  border: none;
+  background-color: #000;
+}
 #product-description .product-title {
   border: none;
   text-transform: uppercase;
@@ -330,7 +334,18 @@ ul#products li a.info {
   list-style: none;
 }
 div[data-hook="description"] {
+  line-height: 1.9;
   margin: 20px 0;
+}
+
+
+/*
+* Cart
+* * * * * * * * * * * * * * * * * * * */
+div[data-hook="cart_container"] h1 {
+  margin-bottom: 30px;
+  text-align: center;
+  text-transform: uppercase;
 }
 span.price,
 #checkout-summary table tr[data-hook="item_total"] td:last-child strong,
@@ -343,6 +358,26 @@ table#cart-detail tbody#line_items tr td[data-hook="cart_item_total"],
 div[data-hook="inside_cart_form"] #subtotal span.order-total {
   font-weight: inherit;
   color: inherit;
+}
+.cart-subtotal,
+.cart-total {
+  background-color: #D9D9DB;
+  text-transform: uppercase;
+}
+.cart-subtotal td h5,
+.cart-total td h5 {
+  color: #000;
+}
+
+
+/*
+* Tables
+* * * * * * * * * * * * * * * * * * * */
+table tbody tr.alt,
+table tbody tr.odd,
+table tfoot tr.alt,
+table tfoot tr.odd {
+background-color: #f2f2f2;
 }
 
 

@@ -1,5 +1,4 @@
 <!-- replace 'li#home-link' -->
-  <li><a href="/t/game-used/">Game Used</a></li>
   <li><a href="/t/sport/baseball/">Baseball</a></li>
   <li><a href="/t/sport/basketball/">Basketball</a></li>
   <li><a href="/t/sport/football/">Football</a></li>
@@ -7,4 +6,4 @@
   <li><a href="/t/sport/skateboarding/">Skateboarding</a></li>
   <li><a href="/t/sport/surfing/">Surfing</a></li>
   <li><a href="/t/sport/action/">Action Sports</a></li>
-  <li><a href="/t/sport/">More</a></li>
+  <li><a href="/t/sport/car-racing/">Car Racing</a></li>

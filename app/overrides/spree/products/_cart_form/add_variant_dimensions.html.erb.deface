@@ -1,0 +1,4 @@
+<!-- insert_after "span.variant-description" -->
+<span class="variant-dimensions">
+  <%= variant_dimensions variant %>
+</span>

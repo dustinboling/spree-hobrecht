@@ -9,4 +9,9 @@ Spree.config do |config|
   # Example:
   # Uncomment to stop tracking inventory levels in the application
   # config.track_inventory_levels = false
+  config[:show_variant_full_price] = true
+  config[:show_raw_product_description] = false
+  config[:send_core_emails] = true
+  config[:always_put_site_name_in_title] = true
+  config[:allow_guest_checkout] = true
 end

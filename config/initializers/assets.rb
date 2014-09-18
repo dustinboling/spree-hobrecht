@@ -1,1 +1,1 @@
-Rails.application.config.assets.precompile += %w( charcoal-brush.png )
+Rails.application.config.assets.precompile += %w( *.png *.jpg *.jpeg *.gif )

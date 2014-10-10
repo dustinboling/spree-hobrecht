@@ -1,9 +1,22 @@
 <!-- replace 'li#home-link' -->
+  <li><a href="/t/">Athlete Signed</a></li>
   <li><a href="/t/sport/baseball/">Baseball</a></li>
-  <li><a href="/t/sport/basketball/">Basketball</a></li>
   <li><a href="/t/sport/football/">Football</a></li>
-  <li><a href="/t/sport/horse-racing/">Horse Racing</a></li>
-  <li><a href="/t/sport/skateboarding/">Skateboarding</a></li>
+  <li><a href="/t/sport/basketball/">Basketball</a></li>
   <li><a href="/t/sport/surfing/">Surfing</a></li>
-  <li><a href="/t/sport/action/">Action Sports</a></li>
-  <li><a href="/t/sport/car-racing/">Car Racing</a></li>
+  <li><a href="/t/sport/horse-racing/">Horses</a></li>
+  <li>
+    <a href="#">Other Sports</a>
+    <ul>
+      <li><a href="/t/sport/auto-racing/">Auto Racing</a></li>
+      <li><a href="/t/sport/skateboarding/">Skateboarding</a></li>
+      <li><a href="/t/sport/hockey/">Hockey</a></li>
+      <li><a href="/t/sport/boxing/">Boxing</a></li>
+      <li><a href="/t/sport/fishing/">Fishing</a></li>
+      <li><a href="/t/sport/tennis/">Tennis</a></li>
+      <li><a href="/t/sport/martial-arts/">Martial Arts</a></li>
+      <li><a href="/t/sport/golf/">Golf</a></li>
+      <li><a href="/t/sport/snowboarding/">Snowboarding</a></li>
+    </ul>
+  </li>
+  

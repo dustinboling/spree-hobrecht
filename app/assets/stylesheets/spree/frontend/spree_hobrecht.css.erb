@@ -74,7 +74,10 @@ nav #main-nav-bar li a {
   font-size: 11px;
   font-weight: 600;
   letter-spacing: 1px;
-  padding: 0px 10px;
+  padding: 5px 10px;
+}
+nav #main-nav-bar li:first-child a {
+    padding-left: 15px;
 }
 /* nav #main-nav-bar li:first-child is defined by spree core.
    this is here to match it, */
@@ -86,18 +89,21 @@ nav #main-nav-bar a {
   padding: 10px;
 }
 nav #main-nav-bar ul {
+  background: #fff;
   position:absolute;
   /*top:100%; Uncommenting this makes the dropdowns work in IE7 but looks a little worse in all other browsers. Your call. */
+  top: 125%;
   left:-9999px;
   margin:0;
-  padding:0;
+  padding: 0;
   text-align:left;
+  box-shadow: 1px 1px 3px #ccc;
 }
 nav #main-nav-bar ul li {
   display:block;
 }
 nav #main-nav-bar li:hover ul {
-  left:0;
+  left: -5px;
 }
 nav #main-nav-bar li:hover ul a {
   text-decoration:none;
@@ -107,6 +113,7 @@ nav #main-nav-bar ul a {
   white-space:nowrap;
   display:block;
   border-bottom:1px solid #ccc;
+  padding: 5px 10px 5px 15px;
 }
 
 

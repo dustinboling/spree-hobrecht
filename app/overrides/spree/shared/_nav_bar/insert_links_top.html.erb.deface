@@ -1,0 +1,4 @@
+<!-- insert_top 'ul#nav-bar' -->
+<li id="link-to-contact" data-hook>
+    <%= link_to 'Contact Us', '/contact' %>
+</li>

@@ -1,16 +1,4 @@
 <% if Spree::Slide.published.count > 0 %>
-  <style type="text/css">
-  #slider {
-      margin:0 auto 0 auto;
-  }
-  .slider-wrapper {
-      margin:0 auto 50px auto;
-  }
-  .slide-title {
-    color: #fff;
-  }
-
-  </style>
 
   <div id="slider" class="idealSlider">
     <% Spree::Slide.published.order('position ASC').each do |s| %>
@@ -24,7 +12,6 @@
 
   <% Spree::Slide.published.order('position ASC').each do |s| %>
     <div id="<%= s.slide_name.to_url %>" class="ideal-html-caption" style="display:none;">
-      <h1 class="slide-title"><%= s.slide_name %></h1>
       <%= raw s.body %>
     </div>
   <% end %>

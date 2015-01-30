@@ -65,6 +65,8 @@ nav #main-nav-bar {
   margin: 0;
   padding: 0;
   text-align: center;
+  position: relative;
+  z-index: 100;
 }
 nav #main-nav-bar li {
   position:relative;
@@ -74,15 +76,16 @@ nav #main-nav-bar li a {
   font-size: 11px;
   font-weight: 600;
   letter-spacing: 1px;
+  margin: 0 20px;
   padding: 5px 10px;
 }
 nav #main-nav-bar li:first-child a {
-    padding-left: 15px;
+    padding-left: 10px;
 }
 /* nav #main-nav-bar li:first-child is defined by spree core.
    this is here to match it, */
-nav #main-nav-bar li:nth-child(9) a {
-  padding-right: 0px;
+nav #main-nav-bar li:nth-child(5) a {
+  padding-right: 10px;
 }
 nav #main-nav-bar a {
   display: inline-block;

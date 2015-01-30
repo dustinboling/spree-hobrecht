@@ -2,21 +2,21 @@
   <li>
     <a href="#">About Us</a>
     <ul>
-      <li><a href="/t/sport/hockey/">Artist Bio</a></li>
-      <li><a href="/t/sport/boxing/">Company</a></li>
-      <li><a href="/t/sport/fishing/">Gallery</a></li>
-      <li><a href="/t/sport/tennis/">Contact</a></li>
-      <li><a href="/t/sport/martial-arts/">Testimonials</a></li>
+      <li><a href="/artist-bio">Artist Bio</a></li>
+      <li><a href="/company">Company</a></li>
+      <li><a href="/gallery">Gallery</a></li>
+      <li><a href="/contact">Contact</a></li>
+      <li><a href="/testimonials">Testimonials</a></li>
     </ul>
   </li>
   <li><a href="/prints/">Buy Prints</a></li>
   <li>
     <a href="#">Apparel</a>
     <ul>
-      <li><a href="/t/apparel/mens-tees/">Men's Tees</a></li>
-      <li><a href="/t/apparel/">Men's Sweatshirts</a></li>
-      <li><a href="/t/apparel/">Women's Tees</a></li>
-      <li><a href="/t/apparel/">Women's Sweatshirts</a></li>
+      <li><a href="/t/apparel/mens-tees">Men's Tees</a></li>
+      <li><a href="/t/apparel/mens-sweaters">Men's Sweatshirts</a></li>
+      <li><a href="/t/apparel/womens-tees">Women's Tees</a></li>
+      <li><a href="/t/apparel/womens-sweatshirts">Women's Sweatshirts</a></li>
     </ul>
   </li>
   <li>
@@ -28,8 +28,8 @@
   <li>
     <a href="#">News</a>
     <ul>
-      <li><a href="/t/sport/hockey/">Artist Blog</a></li>
-      <li><a href="/t/sport/boxing/">Press Releases</a></li>
-      <li><a href="/t/sport/fishing/">For the Media</a></li>
+      <li><a href="/blog">Artist Blog</a></li>
+      <li><a href="/press">Press Releases</a></li>
+      <li><a href="/media">For the Media</a></li>
     </ul>
   </li>

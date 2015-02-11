@@ -1,35 +1,30 @@
 <!-- replace 'li#home-link' -->
-  <li>
+  <li class="menu-item">
     <a href="#">About Us</a>
-    <ul>
-      <li><a href="/artist-bio">Artist Bio</a></li>
-      <li><a href="/company">Company</a></li>
-      <li><a href="/gallery">Gallery</a></li>
-      <li><a href="/contact">Contact</a></li>
-      <li><a href="/testimonials">Testimonials</a></li>
+    <ul class="sub-menu">
+      <li class="menu-item"><a href="/artist-bio">Artist Bio</a></li>
+      <li class="menu-item"><a href="/company">Company</a></li>
+      <li class="menu-item"><a href="/gallery">Gallery</a></li>
+      <li class="menu-item"><a href="/contact">Contact</a></li>
+      <li class="menu-item"><a href="/testimonials">Testimonials</a></li>
     </ul>
   </li>
-  <li><a href="/prints/">Buy Prints</a></li>
-  <li>
+  <li class="menu-item"><a href="/prints/">Buy Prints</a></li>
+  <li class="menu-item">
     <a href="#">Apparel</a>
-    <ul>
-      <li><a href="/t/apparel/mens-tees">Men's Tees</a></li>
-      <li><a href="/t/apparel/mens-sweaters">Men's Sweatshirts</a></li>
-      <li><a href="/t/apparel/womens-tees">Women's Tees</a></li>
-      <li><a href="/t/apparel/womens-sweatshirts">Women's Sweatshirts</a></li>
+    <ul class="sub-menu">
+      <li class="menu-item"><a href="/t/apparel/mens-tees">Men's Tees</a></li>
+      <li class="menu-item"><a href="/t/apparel/mens-sweaters">Men's Sweatshirts</a></li>
+      <li class="menu-item"><a href="/t/apparel/womens-tees">Women's Tees</a></li>
+      <li class="menu-item"><a href="/t/apparel/womens-sweatshirts">Women's Sweatshirts</a></li>
     </ul>
   </li>
-  <li>
-    <a href="#">Merchandise</a>
-    <ul>
-      <li><a href="#">Coming Soon!</a></li>
-    </ul>
-  </li>
-  <li>
+  <li class="menu-item"><a href="#">Merchandise</a></li>
+  <li class="menu-item">
     <a href="#">News</a>
-    <ul>
-      <li><a href="/blog">Artist Blog</a></li>
-      <li><a href="/press">Press Releases</a></li>
-      <li><a href="/media">For the Media</a></li>
+    <ul class="sub-menu">
+      <li class="menu-item"><a href="/blog">Artist Blog</a></li>
+      <li class="menu-item"><a href="/press">Press Releases</a></li>
+      <li class="menu-item"><a href="/media">In the News</a></li>
     </ul>
   </li>

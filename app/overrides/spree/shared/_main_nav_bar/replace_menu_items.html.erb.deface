@@ -1,5 +1,5 @@
 <!-- replace 'li#home-link' -->
-  <li class="menu-item">
+  <li id="about-us-link" class="menu-item">
     <a href="#">About Us</a>
     <ul class="sub-menu">
       <li class="menu-item"><a href="/artist-bio">Artist Bio</a></li>
@@ -9,8 +9,20 @@
       <li class="menu-item"><a href="/testimonials">Testimonials</a></li>
     </ul>
   </li>
-  <li class="menu-item"><a href="/prints/">Buy Prints</a></li>
-  <li class="menu-item">
+  <li id="buy-prints-link" class="menu-item">
+    <a href="/prints/">Buy Prints</a>
+    <ul class="sub-menu">
+      <li class="menu-item"><a href="/t/sport/baseball">Baseball</a></li>
+      <li class="menu-item"><a href="/t/sport/football">Football</a></li>
+      <li class="menu-item"><a href="/t/sport/horse-racing">Horse Racing</a></li>
+      <li class="menu-item"><a href="/t/sport/surfing">Surfing</a></li>
+      <li class="menu-item"><a href="/t/sport/basketball">Basketball</a></li>
+      <li class="menu-item"><a href="/t/sport/skateboarding">Skateboarding</a></li>
+      <li class="menu-item"><a href="/t/sport/boxing">Boxing</a></li>
+      <li class="menu-item"><a href="/t/sport/other">Other Sports</a></li>
+    </ul>
+  </li>
+  <li id="apparel-link" class="menu-item">
     <a href="#">Apparel</a>
     <ul class="sub-menu">
       <li class="menu-item"><a href="/t/apparel/mens-tees">Men's Tees</a></li>
@@ -19,8 +31,8 @@
       <li class="menu-item"><a href="/t/apparel/womens-sweatshirts">Women's Sweatshirts</a></li>
     </ul>
   </li>
-  <li class="menu-item"><a href="#">Merchandise</a></li>
-  <li class="menu-item">
+  <li id="merchandise-link" class="menu-item"><a href="#">Merchandise</a></li>
+  <li id="news-link" class="menu-item">
     <a href="#">News</a>
     <ul class="sub-menu">
       <li class="menu-item"><a href="/blog">Artist Blog</a></li>

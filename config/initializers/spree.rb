@@ -14,4 +14,5 @@ Spree.config do |config|
   config[:send_core_emails] = true
   config[:always_put_site_name_in_title] = true
   config[:allow_guest_checkout] = true
+  config[:products_per_page] = 50
 end

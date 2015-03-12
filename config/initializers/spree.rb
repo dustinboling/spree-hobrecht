@@ -16,3 +16,18 @@ Spree.config do |config|
   config[:allow_guest_checkout] = true
   config[:products_per_page] = 50
 end
+
+# Set Image Sizes
+attachment_config = {
+  styles: {
+      mini:     "48x48#",
+      small:    "100x100#",
+      medium:   "460x300#",
+      product:  "580X580>",
+      large:    "960x960>"
+  }
+}
+
+attachment_config.each do |key, value|
+  Spree::Image.attachment_definitions[:attachment][key.to_sym] = value
+end

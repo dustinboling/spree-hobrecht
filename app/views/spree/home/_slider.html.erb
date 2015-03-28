@@ -4,7 +4,7 @@
       <% @slider_products.each do |product| %>
         <li>
           <div class="product-image">
-            <%= link_to large_image(product), product %>
+            <%= large_image(product) %>
           </div>
           <div class="product-info">
             <h1 class="product-title"><%= product.name %> - <%= product.sku %></h1>

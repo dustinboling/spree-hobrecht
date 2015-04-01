@@ -3,7 +3,7 @@ Spree::Image.class_eval do
     :mini => '', # thumbs under image
     :small => '', # images on category view
     :medium => '',
-    :product => '580x9999^', # Single product page
+    :product => '580x9999>', # Single product page
     :large => '' # light box image
   }
 

@@ -29,9 +29,9 @@
   <div id="slider" class="idealSlider">
     <% Spree::Slide.published.order('position ASC').each do |s| %>
       <% if s.body != "" %>
-        <%= image_tag('', :data => { :src => s.slide_image.url, :caption => '#' + s.slide_name.to_url }) %>
+        <%= image_tag('', :data => { :src => s.slide_image.url(:large), :caption => '#' + s.slide_name.to_url }) %>
       <% else %>
-        <%= image_tag('', :data => { :src => s.slide_image.url }) %>
+        <%= image_tag('', :data => { :src => s.slide_image.url(:large) }) %>
       <% end %>
     <% end %>
   </div>

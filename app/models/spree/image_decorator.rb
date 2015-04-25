@@ -11,6 +11,6 @@ Spree::Image.class_eval do
     :mini => "-gravity north -thumbnail 48x48^ -extent 48x48" ,
     :small => "-gravity north -thumbnail 150x150^ -extent 150x150",
     :medium => "-gravity north -thumbnail 460x435^ -extent 460x435",
-    :large => "-gravity north -thumbnail 940x890^ -extent 940x890"
+    :large => "-gravity north -thumbnail 940x800^ -extent 940x800"
   }
 end

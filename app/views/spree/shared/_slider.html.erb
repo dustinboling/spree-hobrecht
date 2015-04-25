@@ -4,50 +4,24 @@
   position: relative;
 }
 .announcement h2 {
-  width: 100%;
-  height: 60px;
-  line-height: 60px;
+  line-height: 34px;
+  padding: 15px;
   background: #ddd;
   text-align: center;
 }
-.announcement svg {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.announcement svg line {
-  stroke-width: 5;
-  stroke: #000;
-  fill: none;
-  stroke-dasharray: 960;
-  -webkit-transition: all .6s;
-  transition: transform .6s;
-}
-.announcement:hover svg line.top {
-  -webkit-transform: translateX(-960px);
-  transform: translateX(-960px);
-}
-.announcement:hover svg line.bottom {
-  -webkit-transform: translateX(960px);
-  transform: translateX(960px);
-}
-.announcement:hover svg line.left {
-  -webkit-transform: translateY(60px);
-  transform: translateY(60px);
-}
-.announcement:hover svg line.right {
-  -webkit-transform: translateY(-60px);
-  transform: translateY(-60px);
+.announcement .button {
+  display: inline-block;
+  background: #444;
+  color: #fff;
+  font-size: 0.75em;
+  font-weight: 400;
+  line-height: 34px;
+  margin-left: 30px;
+  padding: 0 1em;
 }
 </style>
   <a class="announcement" href="/products/mayweather">
-    <svg width="100%" height="60">
-      <line class="top" x1="960" y1="0" x2="1920" y2="0"/>
-      <line class="left" x1="0" y1="0" x2="0" y2="-60"/>
-      <line class="bottom" x1="0" y1="60" x2="-960" y2="60"/>
-      <line class="right" x1="960" y1="60" x2="960" y2="120"/>
-      <h2>New Mayweather Painting in Progress!</h2>
-    </svg>
+      <h2>A New Floyd Mayweather Painting is in Progress! <span class="button">Check it out &nbsp; &rang;</span></h2>
   </a>
 
 <% if Spree::Slide.published.count > 0 %>
@@ -55,9 +29,9 @@
   <div id="slider" class="idealSlider">
     <% Spree::Slide.published.order('position ASC').each do |s| %>
       <% if s.body != "" %>
-        <%= link_to image_tag('', :data => { :src => s.slide_image.url, :caption => '#' + s.slide_name.to_url }), url_for(s.slide_link) %>
+        <%= image_tag('', :data => { :src => s.slide_image.url(:large), :caption => '#' + s.slide_name.to_url }) %>
       <% else %>
-        <%= link_to image_tag('', :data => { :src => s.slide_image.url }), url_for(s.slide_link) %>
+        <%= image_tag('', :data => { :src => s.slide_image.url(:large) }) %>
       <% end %>
     <% end %>
   </div>
@@ -75,8 +49,8 @@
         selector: '#slider',
         height: 600,
         effect: 'fade',
-        interval: 10000,
-        transitionDuration: 3000
+        interval: 8000,
+        transitionDuration: 2000
       });
       slider.addCaptions();
       //slider.addBulletNav();

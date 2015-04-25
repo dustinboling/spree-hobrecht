@@ -2,6 +2,7 @@
 .announcement {
   display: block;
   position: relative;
+  margin-bottom: 20px;
 }
 .announcement h2 {
   line-height: 34px;
@@ -20,41 +21,44 @@
   padding: 0 1em;
 }
 </style>
+
+<div id="content" class="columns sixteen">
+  
   <a class="announcement" href="/products/mayweather">
       <h2>A New Floyd Mayweather Painting is in Progress! <span class="button">Check it out &nbsp; &rang;</span></h2>
   </a>
 
-<% if Spree::Slide.published.count > 0 %>
+  <% if Spree::Slide.published.count > 0 %>
 
-  <div id="slider" class="idealSlider">
-    <% Spree::Slide.published.order('position ASC').each do |s| %>
-      <% if s.body != "" %>
-        <%= image_tag('', :data => { :src => s.slide_image.url(:large), :caption => '#' + s.slide_name.to_url }) %>
-      <% else %>
-        <%= image_tag('', :data => { :src => s.slide_image.url(:large) }) %>
+    <ul id="slider" class="bxslider">
+      <% Spree::Slide.published.order('position ASC').each do |s| %>
+        
+        <li>
+
+          <% if s.body != "" %>
+            <%= image_tag(s.slide_image.url(:large), :title => s.body) %>
+          <% else %>
+            <%= image_tag(s.slide_image.url(:large)) %>
+          <% end %>
+
+        </li>
+
       <% end %>
-    <% end %>
-  </div>
+    </ul>
 
-  <% Spree::Slide.published.order('position ASC').each do |s| %>
-    <div id="<%= s.slide_name.to_url %>" class="ideal-html-caption" style="display:none;">
-      <%= raw s.body %>
-    </div>
-  <% end %>
-
-
-  <script type="text/javascript">
-  $(window).load(function() {
-      var slider = new IdealImageSlider.Slider({
-        selector: '#slider',
-        height: 600,
-        effect: 'fade',
-        interval: 8000,
-        transitionDuration: 2000
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.bxslider').bxSlider({
+          auto: true,
+          autoHover: true,
+          keyboardEnabled: true,
+          //mode: 'fade',
+          speed: 1000,
+          pause: 7500,
+          captions: true,
+          pager: false
+        });
       });
-      slider.addCaptions();
-      //slider.addBulletNav();
-      slider.start();
-  });
-  </script>
-<% end %>
+    </script>
+  <% end %>
+</div>
